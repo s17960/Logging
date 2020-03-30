@@ -1,0 +1,141 @@
+2020-03-30 22:25:54.2978 Info Message Template Auto Format enabled
+2020-03-30 22:25:54.2978 Info Loading assembly: NLog.Web.AspNetCore
+2020-03-30 22:25:54.3483 Info Adding target FileTarget(Name=alldata)
+2020-03-30 22:25:54.3483 Info Adding target FileTarget(Name=otherFile-web)
+2020-03-30 22:25:54.3649 Info Adding target DatabaseTarget(Name=database)
+2020-03-30 22:25:54.3874 Info Found 78 configuration items
+2020-03-30 22:25:54.5140 Error DatabaseTarget(Name=database): Error when writing to database. Exception: System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'dbo.Log'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NLog.Targets.DatabaseTarget.ExecuteDbCommandWithParameters(LogEventInfo logEvent, IDbConnection dbConnection, IDbTransaction dbTransaction)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+ClientConnectionId:fa6b1b05-09b6-41b0-97c8-072b9a25c2c2
+Error Number:208,State:1,Class:16
+2020-03-30 22:28:20.3453 Info Message Template Auto Format enabled
+2020-03-30 22:28:20.3581 Info Loading assembly: NLog.Web.AspNetCore
+2020-03-30 22:28:20.4120 Info Adding target FileTarget(Name=alldata)
+2020-03-30 22:28:20.4195 Info Adding target FileTarget(Name=otherFile-web)
+2020-03-30 22:28:20.4195 Info Adding target DatabaseTarget(Name=database)
+2020-03-30 22:28:20.4583 Info Found 78 configuration items
+2020-03-30 22:28:20.4952 Error DatabaseTarget(Name=database): Failed to create ConnectionType from DBProvider=Microsoft.Data.SqlClient.SqlConnection, Microsoft.Data.SqlClient Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Data.SqlClient, Culture=neutral, PublicKeyToken=null'. Nie można odnaleźć określonego pliku.
+File name: 'Microsoft.Data.SqlClient, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+
+
+2020-03-30 22:28:20.5196 Error Database Target[database]: Error initializing target Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Data.SqlClient, Culture=neutral, PublicKeyToken=null'. Nie można odnaleźć określonego pliku.
+File name: 'Microsoft.Data.SqlClient, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+
+
+2020-03-30 22:31:37.5603 Info Message Template Auto Format enabled
+2020-03-30 22:31:37.5603 Info Loading assembly: NLog.Web.AspNetCore
+2020-03-30 22:31:37.6190 Info Adding target FileTarget(Name=alldata)
+2020-03-30 22:31:37.6260 Info Adding target FileTarget(Name=otherFile-web)
+2020-03-30 22:31:37.6391 Info Adding target DatabaseTarget(Name=database)
+2020-03-30 22:31:37.6650 Info Found 78 configuration items
+2020-03-30 22:31:37.7804 Error DatabaseTarget(Name=database): Error when writing to database. Exception: System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'dbo.Log'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NLog.Targets.DatabaseTarget.ExecuteDbCommandWithParameters(LogEventInfo logEvent, IDbConnection dbConnection, IDbTransaction dbTransaction)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+ClientConnectionId:b52b0d84-f4db-41ac-9372-7512e5b0608c
+Error Number:208,State:1,Class:16
+2020-03-30 22:32:03.1111 Info Message Template Auto Format enabled
+2020-03-30 22:32:03.1214 Info Loading assembly: NLog.Web.AspNetCore
+2020-03-30 22:32:03.1645 Info Adding target FileTarget(Name=alldata)
+2020-03-30 22:32:03.1709 Info Adding target FileTarget(Name=otherFile-web)
+2020-03-30 22:32:03.1847 Info Adding target DatabaseTarget(Name=database)
+2020-03-30 22:32:03.2093 Info Found 78 configuration items
+2020-03-30 22:32:03.3261 Error DatabaseTarget(Name=database): Error when writing to database. Exception: System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'log.Log'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NLog.Targets.DatabaseTarget.ExecuteDbCommandWithParameters(LogEventInfo logEvent, IDbConnection dbConnection, IDbTransaction dbTransaction)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+ClientConnectionId:34248a0b-3fb9-4181-b0da-004e88f33ff5
+Error Number:208,State:1,Class:16
+2020-03-30 22:33:58.2724 Info Message Template Auto Format enabled
+2020-03-30 22:33:58.2835 Info Loading assembly: NLog.Web.AspNetCore
+2020-03-30 22:33:58.3314 Info Adding target FileTarget(Name=alldata)
+2020-03-30 22:33:58.3394 Info Adding target FileTarget(Name=otherFile-web)
+2020-03-30 22:33:58.3394 Info Adding target DatabaseTarget(Name=database)
+2020-03-30 22:33:58.3796 Info Found 78 configuration items
+2020-03-30 22:36:02.1748 Info Message Template Auto Format enabled
+2020-03-30 22:36:02.1859 Info Loading assembly: NLog.Web.AspNetCore
+2020-03-30 22:36:02.2336 Info Adding target FileTarget(Name=alldata)
+2020-03-30 22:36:02.2336 Info Adding target FileTarget(Name=otherFile-web)
+2020-03-30 22:36:02.2556 Info Adding target DatabaseTarget(Name=database)
+2020-03-30 22:36:02.2809 Info Found 78 configuration items
+2020-03-30 22:39:40.7010 Info Message Template Auto Format enabled
+2020-03-30 22:39:40.7010 Info Loading assembly: NLog.Web.AspNetCore
+2020-03-30 22:39:40.7602 Info Adding target FileTarget(Name=alldata)
+2020-03-30 22:39:40.7683 Info Adding target FileTarget(Name=otherFile-web)
+2020-03-30 22:39:40.7848 Info Adding target DatabaseTarget(Name=database)
+2020-03-30 22:39:40.8116 Info Found 78 configuration items
+2020-03-30 22:40:32.0503 Info Message Template Auto Format enabled
+2020-03-30 22:40:32.0611 Info Loading assembly: NLog.Web.AspNetCore
+2020-03-30 22:40:32.1040 Info Adding target FileTarget(Name=alldata)
+2020-03-30 22:40:32.1104 Info Adding target FileTarget(Name=otherFile-web)
+2020-03-30 22:40:32.1235 Info Adding target DatabaseTarget(Name=database)
+2020-03-30 22:40:32.1480 Info Found 78 configuration items
+2020-03-30 22:44:29.0950 Info Message Template Auto Format enabled
+2020-03-30 22:44:29.1054 Info Loading assembly: NLog.Web.AspNetCore
+2020-03-30 22:44:29.1485 Info Adding target FileTarget(Name=alldata)
+2020-03-30 22:44:29.1549 Info Adding target FileTarget(Name=otherFile-web)
+2020-03-30 22:44:29.1684 Info Adding target DatabaseTarget(Name=database)
+2020-03-30 22:44:29.1944 Info Found 78 configuration items
+2020-03-30 22:48:42.0703 Info Message Template Auto Format enabled
+2020-03-30 22:48:42.0806 Info Loading assembly: NLog.Web.AspNetCore
+2020-03-30 22:48:42.1239 Info Adding target FileTarget(Name=alldata)
+2020-03-30 22:48:42.1239 Info Adding target FileTarget(Name=otherFile-web)
+2020-03-30 22:48:42.1440 Info Adding target DatabaseTarget(Name=database)
+2020-03-30 22:48:42.1685 Info Found 78 configuration items
+2020-03-30 22:59:03.2647 Info Message Template Auto Format enabled
+2020-03-30 22:59:03.2647 Info Loading assembly: NLog.Web.AspNetCore
+2020-03-30 22:59:03.3236 Info Adding target FileTarget(Name=alldata)
+2020-03-30 22:59:03.3236 Info Adding target FileTarget(Name=otherFile-web)
+2020-03-30 22:59:03.3451 Info Adding target DatabaseTarget(Name=database)
+2020-03-30 22:59:03.3697 Info Found 78 configuration items
+2020-03-30 23:00:33.7181 Info Message Template Auto Format enabled
+2020-03-30 23:00:33.7181 Info Loading assembly: NLog.Web.AspNetCore
+2020-03-30 23:00:33.7713 Info Adding target FileTarget(Name=alldata)
+2020-03-30 23:00:33.7773 Info Adding target FileTarget(Name=otherFile-web)
+2020-03-30 23:00:33.7773 Info Adding target DatabaseTarget(Name=database)
+2020-03-30 23:00:33.8150 Info Found 78 configuration items
+2020-03-30 23:03:38.6803 Info Message Template Auto Format enabled
+2020-03-30 23:03:38.6905 Info Loading assembly: NLog.Web.AspNetCore
+2020-03-30 23:03:38.7395 Info Adding target FileTarget(Name=alldata)
+2020-03-30 23:03:38.7466 Info Adding target FileTarget(Name=otherFile-web)
+2020-03-30 23:03:38.7466 Info Adding target DatabaseTarget(Name=database)
+2020-03-30 23:03:38.7834 Info Found 78 configuration items

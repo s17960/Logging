@@ -7,12 +7,14 @@ using Library.Repositories.Interfaces;
 using Microsoft.AspNet.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using Microsoft.Extensions.Logging;
+using System;
 
 namespace Library.Repositories
 {
     public class UserRepository : BaseRepository, IUserRepository
     {
-//        private const string ReaderRole = "Reader";
+        //        private const string ReaderRole = "Reader";
 
         public UserRepository(LibraryContext context) : base(context)
         {
@@ -21,9 +23,9 @@ namespace Library.Repositories
 
         public async Task<ICollection<User>> GetUsers()
         {
-            var usersFromDb = await _context.User.ToListAsync();
+                var usersFromDb = await _context.User.ToListAsync();
 
-            return usersFromDb;
+                return usersFromDb;
         }
         
         public async Task<User> AddUser(UserDto userToAdd)
